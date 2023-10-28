@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "question": "Jenis Kelamin?",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "Wanita",
+        "point": 0
+      },
+      {
+        "id": 2,
+        "question": "Pria",
+        "point": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Pilih rentang usia Anda?",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "25 - 34",
+        "point": 4
+      },
+      {
+        "id": 2,
+        "question": "35 - 39",
+        "point": 3
+      },
+      {
+        "id": 3,
+        "question": "40 - 44",
+        "point": 2
+      },
+      {
+        "id": 4,
+        "question": "45 - 49",
+        "point": 0
+      },
+      {
+        "id": 5,
+        "question": "50 - 54",
+        "point": 1
+      },
+      {
+        "id": 6,
+        "question": "55 - 59",
+        "point": 2
+      },
+      {
+        "id": 7,
+        "question": "60 - 64",
+        "point": 3
+      },
+      {
+        "id": 8,
+        "question": "65 - 64",
+        "point": 4
+      },
+      {
+        "id": 9,
+        "question": "> 70",
+        "point": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Apakah Anda perokok?",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "Tidak Pernah",
+        "point": 0
+      },
+      {
+        "id": 2,
+        "question": "Bekas Perokok",
+        "point": 3
+      },
+      {
+        "id": 2,
+        "question": "Perokok",
+        "point": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Apakah Anda memiliki diabetes?",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "Ya",
+        "point": 2
+      },
+      {
+        "id": 2,
+        "question": "Tidak",
+        "point": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Tekanan darah atas (sistolik)",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "< 120",
+        "point": 0
+      },
+      {
+        "id": 2,
+        "question": "120 - 129",
+        "point": 1
+      },
+      {
+        "id": 3,
+        "question": "130 - 149",
+        "point": 2
+      },
+      {
+        "id": 4,
+        "question": "140 - 159",
+        "point": 3
+      },
+      {
+        "id": 5,
+        "question": "> 160",
+        "point": 4
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Tingkat kolestrol Anda",
+    "type": "option",
+    "option": [
+      {
+        "id": 1,
+        "question": "< 160",
+        "point": -2
+      },
+      {
+        "id": 2,
+        "question": "160 - 199",
+        "point": 0
+      },
+      {
+        "id": 3,
+        "question": "200 - 239",
+        "point": 1
+      },
+      {
+        "id": 4,
+        "question": "240 - 279",
+        "point": 2
+      },
+      {
+        "id": 5,
+        "question": "> 280",
+        "point": 3
+      }
+    ]
+  }
+]

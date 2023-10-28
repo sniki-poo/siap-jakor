@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".SuggestionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saran Untuk Anda"
+        android:textColor="@color/blue"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recyclerview"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="- Cek kesehatan rutin\n-->
+<!-- - Enyahkan asap rokok\n-->
+<!-- - Rajin melakukan aktivitas fisik, minimal 30 menit per hari\n-->
+<!-- - Diet sehat dan seimbang\n-->
+<!-- - Batasi konsumsi gula 4 sendok makan per hari\n-->
+<!-- - Batasi konsumsi garam 1 sendok teh per hari\n-->
+<!-- - Batasi konsumsi minyak/lemak 5 sendok makan per hari\n-->
+<!-- - Istirahat yang cukup 7-8 jam per hari\n-->
+<!-- - Kelola stres"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Kirim Hasil"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_blue"
+        android:id="@+id/submit"/>
+
+</LinearLayout>

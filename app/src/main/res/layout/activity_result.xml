@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo, SasmitaDn"
+        android:textColor="@color/blue"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:id="@+id/description"
+        android:textSize="20dp"
+        android:text="Berdasarkan hasil tes Anda, hfdjksnsdkc dsjncdkscn hdsjn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="Mulai Ulang Skrining"
+            android:background="@drawable/rounded_blue"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="8dp"
+            android:textAllCaps="false"
+            android:id="@+id/restart"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="Saran Untuk Anda"
+            android:background="@drawable/rounded_blue"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:id="@+id/suggestion"/>
+    </LinearLayout>
+
+</LinearLayout>
