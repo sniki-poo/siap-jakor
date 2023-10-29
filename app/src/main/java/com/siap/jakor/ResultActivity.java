@@ -43,7 +43,8 @@ public class ResultActivity extends AppCompatActivity {
             startActivity(new Intent(this, SuggestionActivity.class)
                     .putParcelableArrayListExtra("answers", answers)
                     .putExtra("name", name)
-                    .putExtra("phone", phone));
+                    .putExtra("phone", phone)
+                    .putExtra("point", point));
         });
     }
 }

@@ -29,6 +29,7 @@ public class SuggestionActivity extends AppCompatActivity {
     private ActivitySuggestionBinding binding;
     private ArrayList<Answer> answers = new ArrayList<>();
     private String name, phone;
+    private int point;
     private final String TAG = "mita1";
 
     @Override
@@ -40,6 +41,7 @@ public class SuggestionActivity extends AppCompatActivity {
         name = getIntent().getStringExtra("name");
         phone = getIntent().getStringExtra("phone");
         answers = getIntent().getParcelableArrayListExtra("answers");
+        point = getIntent().getIntExtra("point", 0);
 
         ArrayList<SuggestionModel> arrayList = new ArrayList<>();
         arrayList.add(new SuggestionModel("Cek kesehatan rutin"));
@@ -74,6 +76,7 @@ public class SuggestionActivity extends AppCompatActivity {
             builder.addFormDataPart("entry.1123752606", answers.get(3).getAnswer()); // diabetes
             builder.addFormDataPart("entry.1443895919", answers.get(4).getAnswer()); // tekanan darah
             builder.addFormDataPart("entry.146427865", answers.get(5).getAnswer()); // kolestrol
+            builder.addFormDataPart("entry.493492910", String.valueOf(point) + "%"); // Hasil Resiko
 
             RequestBody body = builder.build();
 
@@ -94,8 +97,10 @@ public class SuggestionActivity extends AppCompatActivity {
                         });
 
                         dialog.show();
-                    } else {
+                    } else if (response.code() == 404) {
                         Toast.makeText(SuggestionActivity.this, "Data gagal dikirim, form telah berubah", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(SuggestionActivity.this, "Terjadi kesalahan, harap coba lagi", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -106,7 +111,7 @@ public class SuggestionActivity extends AppCompatActivity {
                 }
             });
         } else {
-            Toast.makeText(this, "terjadi masalah", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Terjadi masalah, harap hubungi developer", Toast.LENGTH_SHORT).show();
         }
     }
 }
